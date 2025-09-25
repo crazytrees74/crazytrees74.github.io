@@ -1449,7 +1449,7 @@ h3 {
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp {
   padding: 184px 0;
-  background-image: url(../img/banner/contact.png);
+  background-image: url(../img/A7407371.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -1479,13 +1479,6 @@ h3 {
   top: 0;
   content: '';
   z-index: -1;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#001d38+0,001d38+100&0.6+0,1+100 */
-  background: -moz-linear-gradient(top, rgba(0, 29, 56, 0.6) 0%, #001d38 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, rgba(0, 29, 56, 0.6) 0%, #001d38 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, rgba(0, 29, 56, 0.6) 0%, #001d38 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99001d38', endColorstr='#001d38',GradientType=0 );
   /* IE6-9 */
 }
@@ -7345,6 +7338,9 @@ h6 {
 .form-control::placeholder {
   color: #fff !important;
 }
+.form-control {
+  color: #fff !important;
+}
 
 .logo-head {
   max-width: 100px !important;
@@ -7370,4 +7366,10 @@ h6 {
 
 .youtube_video_area .single_video .hover_elements .hover_inner span {
   color: #A7C783 !important;
+}
+
+.fa-lg {
+  font-size: 2em !important;
+  line-height: .75em !important;
+  vertical-align: -25% !important;
 }
