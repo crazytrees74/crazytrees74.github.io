@@ -26,7 +26,30 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "pn7rpDgCq_V2kM6R6",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_dfgb4sf', 'template_cozb73b', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -64,7 +87,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="social_icon text-right">
                                     <ul>
-                                        <li><a target="_blank" href="https://www.instagram.com/crazytreesofficiel/"> <i class="fa fa-instagram"></i> </a></li>
+                                        <li><a target="_blank" href="https://www.instagram.com/crazytreesofficiel/"> <i class="fa fa-instagram fa-lg"></i> </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -123,10 +146,10 @@
                 <div class="col-xl-5 col-md-6">
                     <div class="single-gallery">
                         <div class="portfolio-img">
-                                <img class="img-fluid" src="img/about/about_1.png" alt="">
+                                <img class="img-fluid" src="img/A7407316.jpg" alt="Maeva Chanteuse / Pianiste">
                         </div>
                         <div class="gallery_hover">
-                            <a  class="popup-image"  href="img/about/about_1.png" class="hover_inner">
+                            <a  class="popup-image"  href="img/A7407316.jpg" class="hover_inner">
                                 Maeva - Chanteuse / Pianiste
                             </a>
                         </div>
@@ -152,10 +175,10 @@
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-gallery mb-30">
                         <div class="portfolio-img">
-                                <img src="img/gallery/1.png" alt="">
+                                <img src="img/A7407305.jpg" alt="Guillaume - Chanteur / Guitariste">
                         </div>
                         <div class="gallery_hover">
-                            <a  class="popup-image"  href="img/gallery/1.png" class="hover_inner">
+                            <a  class="popup-image"  href="img/A7407305.jpg" class="hover_inner">
                                 Guillaume - Guitariste / Chanteur
                             </a>
                         </div>
@@ -164,10 +187,10 @@
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-gallery mb-30">
                         <div class="portfolio-img">
-                                <img src="img/gallery/1.png" alt="">
+                                <img src="img/A7407408.jpg" alt="Martin - Batteur">
                         </div>
                         <div class="gallery_hover">
-                            <a  class="popup-image"  href="img/gallery/1.png" class="hover_inner">
+                            <a  class="popup-image"  href="img/A7407408.jpg" class="hover_inner">
                                 Martin - Batteur
                             </a>
                         </div>
@@ -176,10 +199,10 @@
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-gallery mb-30">
                         <div class="portfolio-img">
-                                <img src="img/gallery/1.png" alt="">
+                                <img src="img/A7407553.jpg" alt="Romain - Guitariste">
                         </div>
                         <div class="gallery_hover">
-                            <a  class="popup-image"  href="img/gallery/1.png" class="hover_inner">
+                            <a  class="popup-image"  href="img/A7407553.jpg" class="hover_inner">
                                 Romain - Guitariste
                             </a>
                         </div>
@@ -188,10 +211,10 @@
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-gallery mb-30">
                         <div class="portfolio-img">
-                                <img src="img/gallery/1.png" alt="">
+                                <img src="img/A7407271.jpg" alt="Sylvain - Bassiste">
                         </div>
                         <div class="gallery_hover">
-                            <a  class="popup-image"  href="img/gallery/1.png" class="hover_inner">
+                            <a  class="popup-image"  href="img/A7407271.jpg" class="hover_inner">
                                 Sylvain - Bassiste
                             </a>
                         </div>
@@ -414,7 +437,7 @@
                 <h2 class="contact-title">Ecrivez-nous</h2>
                 </div>
                 <div class="col-lg-8">
-                <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                <form class="form-contact contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
                     <div class="row">
                     <div class="col-12">
                         <div class="form-group">
@@ -533,14 +556,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/mail-script.js"></script>
 
     <script src="js/main.js"></script>
-    
-		<script>
-                $(function() {
-                    $('audio').audioPlayer({
-
-                    });
-                });
-            </script>
 </body>
 
 </html>
