@@ -1288,9 +1288,16 @@ h3 {
 .slider_area .single_slider .slider_text h3 {
   color: #FFF;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 120px;
+  font-size: 100px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.slider_area .single_slider .slider_text h4 {
+  color: #FFF;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
 }
 
 /* line 23, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
@@ -1310,6 +1317,11 @@ h3 {
   .slider_area .single_slider .slider_text h3 {
     font-size: 30px;
     line-height: 35px;
+  }
+
+  .slider_area .single_slider .slider_text h4 {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -1389,7 +1401,7 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px) {
   /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
   .about_area {
-    padding-top: 80px;
+    padding-top: 110px;
     padding-bottom: 50px;
   }
 }
@@ -7313,3 +7325,49 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.contact-title{
+  color: #fff !important;
+}
+
+.gallery_area .single-gallery .gallery_hover a{
+  font-size: 30px !important;
+}
+
+.contact-info .media-body h3 {
+  color: #fff !important;
+}
+
+.contact-info__icon i {
+  color: #fff !important;
+}
+
+.form-control::placeholder {
+  color: #fff !important;
+}
+
+.logo-head {
+  max-width: 100px !important;
+}
+
+.header-area .main-header-area .main-menu ul li a:hover {
+  color: #A7C783;
+}
+
+.header-area .main-header-area .social_icon ul li a:hover {
+  color: #A7C783;
+}
+
+.boxed-btn {
+  border: 1px solid #A7C783;
+  color: #A7C783 !important;
+}
+
+.boxed-btn:hover {
+  background: #A7C783;
+  border: 1px solid #A7C783;
+}
+
+.youtube_video_area .single_video .hover_elements .hover_inner span {
+  color: #A7C783 !important;
+}
