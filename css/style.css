@@ -945,10 +945,6 @@ h3 {
   color: #fff;
   text-align: center;
   line-height: 35px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #41393A;
   font-size: 14px;
   margin-left: 6px;
 }
@@ -1211,7 +1207,7 @@ h3 {
   -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.96);
-  background: #001D38;
+  background: #000C;
   padding-bottom: 0;
   padding: 20px 150px;
 }
@@ -1261,7 +1257,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  background-image: url(../img/A7407371.jpg);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_slider.scss */
@@ -1449,7 +1445,7 @@ h3 {
 /* line 40, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_about.scss */
 .contact_rsvp {
   padding: 184px 0;
-  background-image: url(../img/A7407371.jpg);
+  background-image: url(../img/groupe.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -3005,7 +3001,7 @@ h3 {
 /* line 167, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
 .footer .copy-right_text {
   padding-bottom: 30px;
-  background: #001D38;
+  background: #141414;
 }
 
 /* line 170, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_footer.scss */
@@ -4144,6 +4140,8 @@ h3 {
 .youtube_video_area .single_video:hover .hover_elements .hover_inner span {
   left: 0px;
   opacity: 1;
+  font-weight: bold;
+  background: black;
 }
 
 /* line 123, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_video.scss */
@@ -7372,4 +7370,16 @@ h6 {
   font-size: 2em !important;
   line-height: .75em !important;
   vertical-align: -25% !important;
+}
+
+.single_video .hover_elements .hover_inner {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+/* Texte visible uniquement au hover */
+.single_video:hover .hover_elements .hover_inner {
+    opacity: 1;
+    visibility: visible;
 }
